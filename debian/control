@@ -1,0 +1,17 @@
+Source: twisted-lore
+Section: python
+Priority: optional
+Maintainer: Matthias Klose <doko@debian.org>
+Uploaders: Free Ekanayaka <freee@debian.org>
+Build-Depends: debhelper (>= 5.0.37.1), python-all (>= 2.6.5-9~), python-twisted-core (>= 11.1), patch
+XS-Python-Version: all
+Standards-Version: 3.9.2
+
+Package: python-twisted-lore
+Architecture: all
+Depends: ${python:Depends}, python-twisted-web (>= 11.1), ${misc:Depends}
+Conflicts: python-twisted (<< 2.1), python2.4-twisted-lore, python2.3-twisted-lore
+Replaces: python-twisted (<< 2.1), python2.4-twisted-lore, python2.3-twisted-lore
+XB-Python-Version: ${python:Versions}
+Description: Documentation generator with HTML and LaTeX support
+ Twisted Lore is a documentation generator.
